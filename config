@@ -1,0 +1,19 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	symlinks = false
+	ignorecase = true
+[remote "origin"]
+	url = https://github.com/Virgitm/Fundacion.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "main"]
+	remote = origin
+	merge = refs/heads/main
+[branch "Fundacion-rama-version1"]
+	remote = origin
+	merge = refs/heads/Fundacion-rama-version1
+[branch "Fundacion/branch/version1"]
+	remote = origin
+	merge = refs/heads/Fundacion/branch/version1
