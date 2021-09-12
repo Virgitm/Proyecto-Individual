@@ -1,6 +1,5 @@
 let nav = document.getElementById("menSoc");
 
-
 function menus() {
   let Desplazamiento_actual = window.pageYOffset;
 
@@ -23,42 +22,6 @@ window.addEventListener("scroll", function () {
   console.log(window.pageYOffset);
   menus();
 });
-
-function startfecha() {
-  var d = new Date(),
-    month = "" + (d.getMonth() + 1),
-    day = "" + d.getDate(),
-    year = d.getFullYear();
-
-  if (month.length < 2) month = "0" + month;
-  if (day.length < 2) day = "0" + day;
-  fechap = [day, month, year].join("-");
-
-  document.getElementById("fecha").innerHTML = fechap;
-}
-
-function startTime() {
-  today = new Date();
-  h = today.getHours();
-  m = today.getMinutes();
-  s = today.getSeconds();
-  m = checkTime(m);
-  s = checkTime(s);
-  document.getElementById("reloj").innerHTML = h + ":" + m + ":" + s;
-  t = setTimeout("startTime()", 500);
-}
-
-function checkTime(i) {
-  if (i < 10) {
-    i = "0" + i;
-  }
-  return i;
-}
-
-window.onload = function () {
-  startTime();
-  startfecha();
-};
 
 document.addEventListener("DOMContentLoaded", function () {
 document.getElementById("formulario").addEventListener('submit', validarFormulario);
@@ -99,14 +62,4 @@ function generarNuevoColor(){
 	document.body.style.background = color;
 	document.getElementById("hexadecimal").innerHTML = color;
 	document.getElementById("text").innerHTML = "Copiar Color";
-}
-
-function copiarAlPortapapeles(hexadecimal) {
-	var aux = document.createElement("input");
-	aux.setAttribute("value", document.getElementById(hexadecimal).innerHTML);
-	document.body.appendChild(aux);
-	aux.select();
-	document.execCommand("copy");
-	document.body.removeChild(aux);
-	document.getElementById("text").innerHTML = "Copiado!";
 }

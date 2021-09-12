@@ -1,140 +1,72 @@
-body{
-    background-color: rgb(218, 245, 218);
-        font-family: sans-serif ;
-        font-size: medium;
-    }
-    header{
-        background-color: rgb(145, 188, 236);
-        text-align: center;
-        color: rgb(34, 33, 34);
-        
-    }
-    main{
-        text-align: justify;
-        color: rgb(46, 83, 131);  
-    }
-    .Inicios{
-        font-family: cursive;
-        background-color: rgb(221, 192, 228);
-        margin: 10px;
-        display: inline-block;
-        padding: 50px
-    }
-    .Nuestropropósito{
-        background-color: rgb(124, 30, 148);
-        margin:20px;
-        display: inline-block;
-        padding: 50px;
-        border: 5px solid rgb(16, 15, 17);
-    }
-    .Loquerepresentamos{
-        text-align: justify;
-        background-color: blueviolet;
-        margin:20px;
-        display: inline-block;
-        padding: 50px;
-        border: 5px solid rgb(17, 17, 17);
-    }
-    footer{
-        background-color: rgb(116, 101, 102);
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        text-align: center;
-        width: 100%;
-        height: 80%;
-        margin-top: 50px;
-        color: rgb(53, 8, 51);
-    }
-    .left, .right{
-        float: center;
-        width: 20%;
-        background-color: darkcyan;
-    }
-    
-    .main{
-        float: center;
-        width: 1000%;
-        background-color: darkgray;
-    }
-.creadora{
-    float: center;
+body {
+  background-color: rgb(218, 245, 218);
+  font-family: sans-serif;
+  font-size: medium;
 }
-.estadística{
-    background-color: cadetblue;
-}
-img{
-width: 30%;
-}
-/*Inicio de botón de cambio de color*/
-@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
-
-footer{
-	margin: 0;
-	padding: 0;
-	background: #E8347D;
-	font-family: 'Poppins', sans-serif;
-}
-
-.color{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	text-align: center;
-}
-
-#hexadecimal{
-	font-size: 35px;
-	color: #ffffff;
-	display: block;
-	text-transform: uppercase;
-	margin: 15px;
-}
-
-.color button{
-	cursor: pointer;
-	background: none;
-	outline: none;
-	font-size: 15px;
-	color: #ffffff;
-	border: 3px solid #fff;
-	border-radius: 25px;
-	padding: 10px 15px;
-	transition: transform .3s ease
-}
-
-.color button:hover{
-	transform: scale(1.1);
-}
-
-.tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: #555;
-  color: #fff;
+header {
+  background-color: rgb(145, 188, 236);
   text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: 100%;
-  left: 50%;
-  margin-left: -60px;
-  opacity: 0;
-  transition: opacity 0.3s;
+  color: rgb(34, 33, 34);
+}
+main {
+  text-align: justify;
+  color: rgb(46, 83, 131);
+}
+.Inicios {
+  font-family: cursive;
+  background-color: rgb(221, 192, 228);
+  margin: 10px;
+  display: inline-block;
+  padding: 50px;
+}
+.Nuestropropósito {
+  background-color: rgb(124, 30, 148);
+  margin: 20px;
+  display: inline-block;
+  padding: 50px;
+  border: 5px solid rgb(16, 15, 17);
+}
+.Loquerepresentamos {
+  text-align: justify;
+  background-color: blueviolet;
+  margin: 20px;
+  display: inline-block;
+  padding: 50px;
+  border: 5px solid rgb(17, 17, 17);
 }
 
-.tooltiptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
+.foot{
+    background: linear-gradient(160deg, #22c3c3f6 0%, #fdbb2df1 100%);
 }
 
-.hex:hover .tooltiptext {
-  visibility: visible;
-  opacity: 1;
+.foot h4{
+    font-family: monospace;
+    color: rgb(53, 61, 61);
+    padding: 0%;
+    font-size: 25px;
+    font-weight: 300;
+    margin: 0;
+    overflow: hidden;
+}
+
+.left,
+.right {
+  float: center;
+  width: 20%;
+  background-color: darkcyan;
+}
+
+.main {
+  float: center;
+  width: 1000%;
+  background-color: darkgray;
+}
+.creadora {
+  float: center;
+}
+.estadística {
+  background-color: cadetblue;
+}
+img {
+  width: 30%;
 }
