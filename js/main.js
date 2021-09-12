@@ -1,5 +1,5 @@
 let nav = document.getElementById("menSoc");
-window.alert("Bienvenido, conocenos y forma parte de nosotros")
+
 
 function menus() {
   let Desplazamiento_actual = window.pageYOffset;
@@ -61,7 +61,7 @@ window.onload = function () {
 };
 
 document.addEventListener("DOMContentLoaded", function () {
-    document.getElementById("formulario").addEventListener('submit', validarFormulario);
+document.getElementById("formulario").addEventListener('submit', validarFormulario);
 });
 
 function validarFormulario(evento) {
@@ -78,10 +78,35 @@ function validarFormulario(evento) {
         return;
     }
 
-    var mensaje = document.getElementById('mensaje').value;
+    var mensaje = document.getElementById('escribe tu mensaje').value;
     if (mensaje.length == 0) {
         alert('Introducir texto en el campo Mensaje');
         return;
     }
     this.submit();
+}
+
+//Código de cambio de color//
+function generarNuevoColor(){
+	var simbolos, color;
+	simbolos = "0123456789ABCDEF";
+	color = "#";
+
+	for(var i = 0; i < 6; i++){
+		color = color + simbolos[Math.floor(Math.random() * 16)];
+	}
+
+	document.body.style.background = color;
+	document.getElementById("hexadecimal").innerHTML = color;
+	document.getElementById("text").innerHTML = "Copiar Color";
+}
+
+function copiarAlPortapapeles(hexadecimal) {
+	var aux = document.createElement("input");
+	aux.setAttribute("value", document.getElementById(hexadecimal).innerHTML);
+	document.body.appendChild(aux);
+	aux.select();
+	document.execCommand("copy");
+	document.body.removeChild(aux);
+	document.getElementById("text").innerHTML = "Copiado!";
 }
