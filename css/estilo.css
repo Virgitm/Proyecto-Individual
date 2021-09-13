@@ -35,18 +35,18 @@ main {
   border: 5px solid rgb(17, 17, 17);
 }
 
-.foot{
-    background: linear-gradient(160deg, #22c3c3f6 0%, #fdbb2df1 100%);
+.foot {
+  background: linear-gradient(160deg, #22c3c3f6 0%, #fdbb2df1 100%);
 }
 
-.foot h4{
-    font-family: monospace;
-    color: rgb(53, 61, 61);
-    padding: 0%;
-    font-size: 25px;
-    font-weight: 300;
-    margin: 0;
-    overflow: hidden;
+.foot h4 {
+  font-family: monospace;
+  color: rgb(53, 61, 61);
+  padding: 0%;
+  font-size: 25px;
+  font-weight: 300;
+  margin: 0;
+  overflow: hidden;
 }
 
 .left,
@@ -69,4 +69,30 @@ main {
 }
 img {
   width: 30%;
+}
+
+.galeria {
+  margin: 50px;
+}
+.galeria li {
+  display: inline-block;
+  padding: 5px;
+  border: 5px solid rgb(20, 20, 20);
+}
+.galeria img {
+  width: 300px;
+  height: 300px;
+}
+.span {
+  color: rgb(43, 45, 51);
+  background: rgb(193, 224, 162);
+}
+.span p {
+  color: darkgoldenrod;
+}
+.boton {
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: all 0.4s linear;
+  border-radius: 120px;
 }
