@@ -5,31 +5,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estilo.css">
-    <title>Fundación</title>
-    <!-- Jquery -->
-    <script src="jquery-3.6.0.js"></script>
+
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css" />
+
+    <!-- Jquery nuevo -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css" />
+
+    <!-- Jquery -->
+    <script src="jquery-3.6.0.js"></script>
+
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Fundación</title>
+
 </head>
 
 
 <body>
-    <header>
-        <div class="titulo">
-            <h1>Fundación</h1>
-            <nav>
-                <il>
-                    <a href="./quienes_somos.html">Quienes somos</a> /
-                    <a href="./contacto.html">Contacto</a> /
-                    <a href="./galeria.html">Galería</a> /
-                    <button onclick="generarNuevoColor()">Generar Color </button>
-                </il>
-            </nav>
+    <header class="Header">
+        <div class="bg-dark bd-dark1" id="menSoc">
+            <div class="container">
+                <nav class="navbar bg-transparent navbar-dark navbar-expand-lg">
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#Menuprincial"
+                        aria-controls="menuPrincipal" aria-expanded="false">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="naveg collapse navbar-collapse " id="Menuprincial">
+                        <div class="naveg  navbar-nav w-100 justify-content-center">
+                            <a href="./quienes_somos.html">Quiénes somos</a> 
+                            <a href="./contacto.html">Contacto</a> 
+                            <a href="./galeria.html">Galería</a>
+                            <button onclick="generarNuevoColor()">Generar Color </button>
+                        </div>
+                    </div>
+                </nav>
+            </div>
         </div>
+        
     </header>
-    <hr>
+    <br>
+    
     <main>
         <section class="tituloh2">
             <div class="container fluid">
@@ -82,90 +102,367 @@
                 </div>
             </div>
         </section>
-        <section id="estadística">
-            <hr />
-            <h2 class="text-center">Estadísticas</h2>
-            <table width="100%" border="1">
-                <thead>
-                    <tr>
-                        <th>Región</th>
-                        <th>Comuna</th>
-                        <th>Hombres</th>
-                        <th>Mujeres</th>
-                        <th>Casos resueltos</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Comuna 1</td>
-                        <td>Región 1</td>
-                        <td>10</td>
-                        <td>40</td>
-                        <td>200</td>
-                    </tr>
-                    <tr>
-                        <td>Comuna 2</td>
-                        <td>Región 1</td>
-                        <td>11</td>
-                        <td>25</td>
-                        <td>150</td>
-                    </tr>
-                    <tr>
-                        <td>Comuna 3</td>
-                        <td>Región 2</td>
-                        <td>5</td>
-                        <td>4</td>
-                        <td>90</td>
-                    </tr>
-                    <tr>
-                        <td>Comuna 4</td>
-                        <td>Región 2</td>
-                        <td>2</td>
-                        <td>35</td>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <td>Comuna 5</td>
-                        <td>Región 2</td>
-                        <td>1</td>
-                        <td>20</td>
-                        <td>250</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-    </main>
+        
 
-    <br/>
-    <div class="text-center span" style="border: solid rgb(13, 13, 14);">
-        <h4 class="font_4 " style="font-size:30px">¿Deseas más información? Contáctanos</h4>
-            <p>
-                Esto es un párrafo dentro de un div,
-                <span style="color: red;"> y esto un span dentro de un párrafo. <button> 
-                    <a href="contacto.html"> Botón</a>
-                </button> </span>
-            </p>            
-    </div>
-    <br/>
-    <footer class="foot">
-        <div class="text-center">
-            <h4>Virgi-2021</h4>
+        <h1 class="text-center">NUESTRAS OFICINAS</h1>
+
+        <h3 class="text-center">PUEDE UBICARNOS EN ESTAS DIRECCIONES</h3>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <table id="example" class="table table-striped table-bordered" style="width:100%">
+                        <thead>
+                            <tr>
+                                <th>NOMBRES DE NUESTROS GERENTES</th>
+                                <th>NUESTRA UBICACIÓN</th>
+                                <th>PAIS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Tiger Nixon</td>
+                                <td>Plaza Nora, 01, Ático 0º</td>
+                                <td>Edinburgh</td>
+                            </tr>
+                            <tr>
+                                <td>Garrett Winters</td>
+                                <td>Ronda Asier, 86, 68º E</td>
+                                <td>Tokyo</td>
+                            </tr>
+                            <tr>
+                                <td>Ashton Cox</td>
+                                <td>Ruela Francisco, 530, 9º C</td>
+                                <td>San Francisco</td>
+                            </tr>
+                            <tr>
+                                <td>Cedric Kelly</td>
+                                <td>Ruela Naiara, 21, 2º F</td>
+                                <td>Edinburgh</td>
+                            </tr>
+                            <tr>
+                                <td>Airi Satou</td>
+                                <td>Praza Martín, 7, Bajos</td>
+                                <td>Tokyo</td>
+                            </tr>
+                            <tr>
+                                <td>Brielle Williamson</td>
+                                <td>Rúa Ainara, 914, 3º F</td>
+                                <td>New York</td>
+                            </tr>
+                            <tr>
+                                <td>Herrod Chandler</td>
+                                <td>Rúa Santiago, 240, 3º 6º</td>
+                                <td>San Francisco</td>
+                            </tr>
+                            <tr>
+                                <td>Rhona Davidson</td>
+                                <td>Avenida Medrano, 05, 20º F</td>
+                                <td>Tokyo</td>
+                            </tr>
+                            <tr>
+                                <td>Colleen Hurst</td>
+                                <td>95872 Raquel Trafficway Suite 631</td>
+                                <td>San Francisco</td>
+                            </tr>
+                            <tr>
+                                <td>Sonya Frost</td>
+                                <td>Travessera Elena, 4, 7º F</td>
+                                <td>Edinburgh</td>
+                            </tr>
+                            <tr>
+                                <td>Jena Gaines</td>
+                                <td>46706 Crist Groves Suite 331</td>
+                                <td>London</td>
+                            </tr>
+                            <tr>
+                                <td>Quinn Flynn</td>
+                                <td>Avenida Medrano, 05, 20º F</td>
+                                <td>Edinburgh</td>
+                            </tr>
+                            <tr>
+                                <td>Charde Marshall</td>
+                                <td>46706 Crist Groves Suite 331</td>
+                                <td>San Francisco</td>
+                            </tr>
+                            <tr>
+                                <td>Haley Kennedy</td>
+                                <td>95872 Raquel Trafficway Suite 631</td>
+                                <td>London</td>
+                            </tr>
+                            <tr>
+                                <td>Tatyana Fitzpatrick</td>
+                                <td>Avenida Medrano, 05, 20º Fr</td>
+                                <td>London</td>
+                            </tr>
+                            <tr>
+                                <td>Michael Silva</td>
+                                <td>555 Paucek Grove</td>
+                                <td>London</td>
+                            </tr>
+                            <tr>
+                                <td>Paul Byrd</td>
+                                <td>90058 Willms Locks</td>
+                                <td>New York</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria Little</td>
+                                <td>53728 Herzog Mall</td>
+                                <td>New York</td>
+                            </tr>
+                            <tr>
+                                <td>Bradley Greer</td>
+                                <td>90058 Willms Locks</td>
+                                <td>London</td>
+                            </tr>
+                            <tr>
+                                <td>Dai Rios</td>
+                                <td>6826 Lula Extension Suite 155</td>
+                                <td>Edinburgh</td>
+                            </tr>
+                            <tr>
+                                <td>Jenette Caldwell</td>
+                                <td>85841 Jadyn Unions Apt. 945</td>
+                                <td>New York</td>
+                            </tr>
+                            <tr>
+                                <td>Yuri Berry</td>
+                                <td>53728 Herzog Mall</td>
+                                <td>New York</td>
+                            </tr>
+                            <tr>
+                                <td>Caesar Vance</td>
+                                <td>53728 Herzog Mall</td>
+                                <td>New York</td>
+                            </tr>
+                            <tr>
+                                <td>Doris Wilder</td>
+                                <td>6826 Lula Extension Suite 155</td>
+                                <td>Sydney</td>
+                            </tr>
+                            <tr>
+                                <td>Angelica Ramos</td>
+                                <td>85841 Jadyn Unions Apt. 945</td>
+                                <td>London</td>
+                            </tr>
+                            <tr>
+                                <td>Gavin Joyce</td>
+                                <td>avenue Cuvelier 212</td>
+                                <td>Edinburgh</td>
+                            </tr>
+                            <tr>
+                                <td>Jennifer Chang</td>
+                                <td>Urb. Martín Galván # 48837 Hab. 363</td>
+                                <td>Singapore</td>
+                            <tr>
+                                <td>Brenden Wagner</td>
+                                <td>384 Murray Well Apt. 255</td>
+                                <td>San Francisco</td>
+                            </tr>
+                            <tr>
+                                <td>Fiona Green</td>
+                                <td>384 Murray Well Apt. 255</td>
+                                <td>San Francisco</td>
+                            </tr>
+                            <tr>
+                                <td>Shou Itou</td>
+                                <td>Jr. Miguel Ángel Caldera # 0911</td>
+                                <td>Tokyo</td>
+                            </tr>
+                            <tr>
+                                <td>Michelle House</td>
+                                <td>Urb. Martín Galván # 48837 Hab. 363</td>
+                                <td>Sydney</td>
+                            </tr>
+                            <tr>
+                                <td>Suki Burks</td>
+                                <td>avenue Cuvelier 212</td>
+                                <td>London</td>
+                            </tr>
+                            <tr>
+                                <td>Prescott Bartlett</td>
+                                <td>Jr. Miguel Ángel Caldera # 0911</td>
+                                <td>London</td>
+                            </tr>
+                            <tr>
+                                <td>Gavin Cortez</td>
+                                <td>384 Murray Well Apt. 255</td>
+                                <td>San Francisco</td>
+                            </tr>
+                            <tr>
+                                <td>Martena Mccray</td>
+                                <td>Post-Sales support</td>
+                                <td>Edinburgh</td>
+                            </tr>
+                            <tr>
+                                <td>Unity Butler</td>
+                                <td>53966 Karina Isle</td>
+                                <td>San Francisco</td>
+                            </tr>
+                            <tr>
+                                <td>Howard Hatfield</td>
+                                <td>Office Manager</td>
+                                <td>San Francisco</td>
+                            </tr>
+                            <tr>
+                                <td>Hope Fuentes</td>
+                                <td>Secretary</td>
+                                <td>San Francisco</td>
+                            </tr>
+                            <tr>
+                                <td>Vivian Harrell</td>
+                                <td>Financial Controller</td>
+                                <td>San Francisco</td>
+                            </tr>
+                            <tr>
+                                <td>Timothy Mooney</td>
+                                <td>Office Manager</td>
+                                <td>London</td>
+                            </tr>
+                            <tr>
+                                <td>Jackson Bradshaw</td>
+                                <td>Director</td>
+                                <td>New York</td>
+                            </tr>
+                            <tr>
+                                <td>Olivia Liang</td>
+                                <td>Support Engineer</td>
+                                <td>Singapore</td>
+                            </tr>
+                            <tr>
+                                <td>Bruno Nash</td>
+                                <td>Software Engineer</td>
+                                <td>London</td>
+                            </tr>
+                            <tr>
+                                <td>Sakura Yamamoto</td>
+                                <td>Support Engineer</td>
+                                <td>Tokyo</td>
+                            </tr>
+                            <tr>
+                                <td>Thor Walton</td>
+                                <td>Developer</td>
+                                <td>New York</td>
+                            </tr>
+                            <tr>
+                                <td>Finn Camacho</td>
+                                <td>Support Engineer</td>
+                                <td>San Francisco</td>
+                            </tr>
+                            <tr>
+                                <td>Serge Baldwin</td>
+                                <td>Data Coordinator</td>
+                                <td>Singapore</td>
+                            </tr>
+                            <tr>
+                                <td>Zenaida Frank</td>
+                                <td>Software Engineer</td>
+                                <td>New York</td>
+                            </tr>
+                            <tr>
+                                <td>Zorita Serrano</td>
+                                <td>Software Engineer</td>
+                                <td>San Francisco</td>
+                            </tr>
+                            <tr>
+                                <td>Jennifer Acosta</td>
+                                <td>santa marta</td>
+                                <td>colombia</td>
+                            </tr>
+                            <tr>
+                                <td>Cara Stevens</td>
+                                <td>Sales Assistant</td>
+                                <td>New York</td>
+                            </tr>
+                            <tr>
+                                <td>Hermione Butler</td>
+                                <td>Regional Director</td>
+                                <td>London</td>
+                            </tr>
+                            <tr>
+                                <td>Lael Greer</td>
+                                <td>norte de sanatander</td>
+                                <td>colombia</td>
+                            </tr>
+                            <tr>
+                                <td>Jonas Alexander</td>
+                                <td>Developer</td>
+                                <td>San Francisco</td>
+                            </tr>
+                            <tr>
+                                <td>Shad Decker</td>
+                                <td>Regional Director</td>
+                                <td>Edinburgh</td>
+                            </tr>
+                            <tr>
+                                <td>Michael Bruce</td>
+                                <td>bogota</td>
+                                <td>colombia</td>
+                            </tr>
+                            <tr>
+                                <td>Donna Snider</td>
+                                <td>Customer Support</td>
+                                <td>New York</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th>NOMBRES DE NUESTROS GERENTES</th>
+                                <th>NUESTRA UBICACIÓN</th>
+                                <th>PAÍS</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+
+                </div>
+            </div>
         </div>
-    </footer>
 
-    <!-- JQuery, Popper.js, Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        <br />
+        <div class="text-center span" style="border: solid rgb(13, 13, 14);">
+            <h4 class="font_4 " style="font-size:30px">¿Necesitas más información? Contáctanos</h4>
+            <p>
+                Estamos aquí para asistirte.
+                <span style="color: rgb(27, 99, 146);"> Llamanos o escríbenos un mail o contáctanos mediante nuestros
+                    canales sociales. <button>
+                        <a href="contacto.html"> Botón</a>
+                    </button> 
+                </span>
+            </p>
+        </div>
+        <br />
+        <footer class="foot">
+            <div class="text-center">
+                <h4>Virgi-2021</h4>
+            </div>
+        </footer>
+
+
+        <!-- JQuery, Popper.js, Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+            </script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+            </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+            </script>
+        <script src="js/main.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="js/alerta.js"></script>
+        <script src="//cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+
+        <!-- mapa con datatable-->
+        <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
+        <script src="//cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('#example').DataTable();
+            });
         </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-        </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
-        </script>
-    <script src="js/main.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="js/alerta.js"></script>
+
 </body>
 
 </html>

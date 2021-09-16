@@ -1,3 +1,5 @@
+
+// Código Nav //
 let nav = document.getElementById("menSoc");
 
 function menus() {
@@ -22,6 +24,7 @@ window.addEventListener("scroll", function () {
   console.log(window.pageYOffset);
   menus();
 });
+
 
 document.addEventListener("DOMContentLoaded", function () {
 document.getElementById("formulario").addEventListener('submit', validarFormulario);
@@ -62,4 +65,18 @@ function generarNuevoColor(){
 	document.body.style.background = color;
 	document.getElementById("hexadecimal").innerHTML = color;
 	document.getElementById("text").innerHTML = "Copiar Color";
+}
+
+//codigo  del google maps  xD//
+
+function iniciarMap() {
+    var coord = { lat: -33.4488897, lng: -70.6692655 };
+    var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 10,
+        center: coord
+    });
+    var marker = new google.maps.Marker({
+        position: coord,
+        map: map
+    });
 }
