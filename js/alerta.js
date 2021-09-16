@@ -1,3 +1,4 @@
+// Mensaje de alerta //
 swal.fire({
-    title: "Bienvenidos a mi sitio"
+    title: "Bienvenidos"
 });

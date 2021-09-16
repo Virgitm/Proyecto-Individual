@@ -119,15 +119,16 @@ main {
   border: 5px solid rgb(17, 17, 17);
 }
 
+/* FOOTER */
 .foot {
-  background: linear-gradient(160deg, #22c3c3f6 0%, #fdbb2df1 100%);
+  background: linear-gradient(160deg, #788181f6 0%, #e7e0d0f1 100%);
 }
 
 .foot h4 {
   font-family: monospace;
-  color: rgb(53, 61, 61);
+  color: rgb(19, 20, 20);
   padding: 0%;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 300;
   margin: 0;
   overflow: hidden;
