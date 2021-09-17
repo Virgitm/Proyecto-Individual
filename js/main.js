@@ -26,46 +26,6 @@ window.addEventListener("scroll", function () {
 });
 
 
-// Validación del formulario Jquery //
-
-$(document).ready(function () {
-  $("#formulario").validate({
-  rules: {
-      nombre: {
-      required: true,
-      minlength: 3,
-      maxlength: 15,
-      },
-      correo: {
-      required: true,
-      minlength: 10,
-      maxlength: 50,
-      },
-      mensaje: {
-      required: true,
-      minlength: 10,
-      maxlength: 100,
-      },
-  },
-  messages: {
-      nombre: {
-      required: "Debe ingresar Nombre y Apellido",
-      minlength: "El usuario debe tener un mínimo de 3 carácteres",
-      maxlength: "El usuario debe tener un máximo de 15 carácteres",
-      },
-      correo: {
-      required: "Debe ingresar un correo Válido",
-      minlength: "El correo debe tener un mínimo de 10 carácteres",
-      maxlength: "El correo debe tener un máximo de 50 carácteres",
-      },
-      mensaje: {
-      required: "Debe ingresar mensaje",
-      minlength: "El mensaje debe tener como minimo 10 carácteres",
-      maxlength: "El mensaje debe tener un máximo de 100 carácteres",
-      },
-  },
-  });
-});
 
 //Código de cambio de color//
 function generarNuevoColor(){
