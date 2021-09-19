@@ -25,7 +25,33 @@ window.addEventListener("scroll", function () {
   menus();
 });
 
+// Validación de formulario //
 
+document.addEventListener("DOMContentLoaded", function () {
+  document.getElementById("formulario").addEventListener('submit', validarFormulario);
+});
+
+function validarFormulario(evento) {
+  evento.preventDefault();
+  var usuario = document.getElementById('nombre').value;
+  if (usuario.length == 0) {
+      alert('Introducir texto en el campo Nombre');
+      return;
+  }
+
+  var correo = document.getElementById('correo').value;
+  if (correo.length == 0) {
+      alert('Introducir texto en el campo Correo');
+      return;
+  }
+
+  var mensaje = document.getElementById('mensaje').value;
+  if (mensaje.length == 0) {
+      alert('Introducir texto en el campo Mensaje');
+      return;
+  }
+  this.submit();
+}
 
 //Código de cambio de color//
 function generarNuevoColor(){
