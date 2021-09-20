@@ -203,3 +203,22 @@ img {
 .carousel-inner {
   max-height: 20rem !important;
 }
+/* Preguntas frecuentes */
+:root{
+  --primario: #e23939;
+  --gris-claro: #b8b8b8;
+  --sombra: 0 0 13px 0 rgba(185, 185, 185, .25)
+
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+.Main{
+  max-width: 1000px;
+  width: 90%;
+  margin: 48px auto;
+}
+
+
+}
