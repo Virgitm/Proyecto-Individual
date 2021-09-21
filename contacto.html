@@ -11,7 +11,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
-    
+    <!-- RRSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
     
 </head>
 
@@ -32,6 +33,12 @@
                             <a href="index.html">Inicio</a> 
                             <a href="quienes_somos.html">Quiénes somos</a> 
                             <a href="galeria.html">Galería</a>
+                            <a href="./Preguntas.html">Preguntas frecuentes</a>
+                            <div class="social-networks">
+                                <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                            </div>
                         </div>
                     </div>
                 </nav>
@@ -40,15 +47,17 @@
 
     </header>
     
-    <section class="container Contacto ">
-        <h1 class="text-center">Contáctanos</h1>
+    <section class="Contacto container">
+        <h1 class="text-center">CONTÁCTANOS</h1>
         <form class="fromCont" id="formulario">
             <div class="row d-flex justify-content-between">
-                <input class="form-control col-sm-12 col-md-6" type="text" placeholder="Nombre Completo"  name="nombre">
-                <input class="form-control col-sm-12 col-md-5" type="email" placeholder="Correo" name="correo">
-                <textarea class="form-control col-md-12 col-md-6" rows="" placeholder="Escribe tu mensaje" name="mensaje"
-                    ></textarea>
-                <a href="" class="col-sm-2">Enviar Mensaje</a>
+                <input class="form-control col-sm-12 col-md-6" placeholder="Escribe Tu Nombre Aqui" type="text"
+                    id="nombre" name="nombre">
+                <input class="form-control col-sm-12 col-md-5" placeholder="Escribe Tu Email Aqui" type="email"
+                    id="correo" name="correo">
+                <textarea class="form-control col-md-12" placeholder="Escribe Tu Mensaje Aqui" id="mensaje"
+                    name="mensaje"></textarea>
+                <input href="" class="col-md-2" type="submit" value="Enviar Mensaje">
             </div>
         </form>
     </section>
